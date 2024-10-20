@@ -1,0 +1,231 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif; 
+}
+
+body {
+    background-color: #ffffff;
+}
+
+nav {
+    position: relative;
+    transition: top 0.3s;
+}
+
+.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    min-height: 80vh;
+    padding: 2px 0;
+    background: #ffffff;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    max-width: 90%;
+    margin: 10px;
+    padding: 20px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    position: relative;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    font-size: 20px;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    transition: color 0.3s;
+    padding: 0 5px;
+}
+
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    width: 0;
+    height: 3px;
+    background-color: red;
+    transition: width 0.3s ease, left 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: red;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+.social {
+    position: absolute;
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.social a {
+    font-size: 30px;
+    margin-bottom: 30px;
+    transition: color 0.3s;
+}
+
+.social a:hover {
+    color: red;
+}
+
+.detail {
+    margin-left: 8%;
+    margin-top: 13%;
+}
+
+.detail h1 {
+    font-size: 50px;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.detail h2 {
+    font-size: 40px;
+    color: #333;
+}
+
+.detail p {
+    font-size: 20px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.about-me {
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: relative;
+    justify-content: center;
+    width: 100%;
+    padding: 0 20px;
+    min-height: 100vh;
+    background: #ffffff;
+}
+
+.about-me h2 {
+    margin-bottom: 20px;
+}
+
+.about-me p {
+    text-align: relative;
+    font-size: 18px;
+    color: #555;
+}
+
+.portfolio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0 20px;
+    min-height: 100vh;
+    background: #ffffff;
+}
+
+.education-items {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    width: 100%;
+    max-width: 600px;
+}
+
+.portfolio h2{
+    margin-bottom: 25px;
+}
+
+.education-item {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+}
+
+.education-item h3 {
+    margin-bottom: 70px;
+}
+
+.vscodes .shape{
+    width: 100%;
+    height: 700px;
+    bottom: -30%;
+}
+
+.vscodes {
+    width: 50%;
+    max-width: 100%;
+    height: 80%;
+    position: absolute;
+    bottom: -4%;
+    right: 8%;
+}
+
+.vscodes img {
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: bottom 1s, left 1s;
+}
+
+.vscodes:hover .shape {
+    bottom: -20%;
+}
+
+.vscodes:hover .kazuha {
+    left: 45%;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0 20px;
+    min-height: 50vh;
+    background: #ffffff;
+}
+
+.contact h2 {
+    margin-bottom: 20px;
+}
+
+.contact-info {
+    text-align: center;
+    font-size: 18px;
+    color: #555;
+}

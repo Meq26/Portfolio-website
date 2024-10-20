@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.lineicons.com/4.0/lineicons.css">
+</head>
+<body>
+    <header class="hero" id="home">
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="detail">
+            <h1>I'm Flaire Telles</h1>
+        </div>
+        <div class="vscodes">
+            <img src="vscodes/shape.png" alt="Decorative shape" class="shape">
+            <img src="vscodes/kazuha.png" alt="Kazuha character" class="kazuha">
+        </div>
+        <div class="social">
+            <a href="https://www.facebook.com/flaire.telles" target="_blank" aria-label="Facebook">
+                <i class="lni lni-facebook"></i>
+            </a>
+            <a href="#contact" aria-label="Phone">
+                <i class="lni lni-phone"></i>
+            </a>
+            <a href="#contact" aria-label="Email">
+                <i class="lni lni-envelope"></i>
+            </a>
+        </div>
+    </header>
+    
+    <section class="about-me" id="about">
+        <h2>About Me</h2>
+        <p>
+            I am Flaire Ivan B. Telles, a passionate student at the University of the Cordilleras, currently pursuing 
+           <br> a degree in Information Technology majoring in Web Technology. I have a passion for web development 
+           <br> and love exploring innovative ways to apply my skills in real-world projects.
+        </p>
+    </section>
+        
+    <section class="portfolio" id="portfolio">
+        <h2>Education Attainment</h2>
+        <div class="education-items">
+            <div class="education-item">
+                <h3>University of the Cordilleras</h3>
+                <p>Bachelor of Science in Information Technology</p>
+                <p>Web Technology</p>
+            </div>
+            <div class="education-item">
+                <h3>Pinsao National High School</h3>
+                <p>Humanities and Social Sciences</p>
+                <p>Graduated: 2023</p>
+            </div>
+            <div class="education-item">
+                <h3>Pinsao Elementary School</h3>
+                <p>Graduated: 2017</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2>Contact</h2>
+        <div class="contact-info">
+            <p><strong>Email:</strong> flairetelles123@gmail.com</p>
+            <p><strong>Phone:</strong> +63 99 2693 4762</p>
+            <p><strong>Location:</strong> Baguio City, Philippines</p>
+        </div>
+    </section>
+    <script>
+        const nav = document.querySelector('nav');
+         heroHeight = document.querySelector('.hero').offsetHeight;
+
+        const handleScroll = () => {
+            if (window.scrollY >= heroHeight) {
+                nav.classList.add('fixed');
+            } else {
+                nav.classList.remove('fixed');
+            }
+        };
+
+        window.addEventListener('scroll', handleScroll);
+
+        document.querySelectorAll('nav ul li a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                targetElement.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+
+                nav.classList.add('fixed');
+            });
+        });
+    </script>
+</body>
+</html>
