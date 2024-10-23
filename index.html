@@ -39,29 +39,41 @@
     
     <section class="about-me" id="about">
         <h2>About Me</h2>
-        <p>
-            I am Flaire Ivan B. Telles, a passionate student at the University of the Cordilleras, currently pursuing 
-           <br> a degree in Information Technology majoring in Web Technology. I have a passion for web development 
-           <br> and love exploring innovative ways to apply my skills in real-world projects.
-        </p>
+        <p> I am Flaire Ivan B. Telles, a passionate student at the University of the Cordilleras, </p>
+        <p> currently pursuing a degree in Information Technology majoring in Web Technology. </p>
+        <p> I have a passion for web development and love exploring innovative ways to apply </p>
+        <p> my skills in real-world projects.</p>
+
     </section>
         
     <section class="portfolio" id="portfolio">
         <h2>Education Attainment</h2>
         <div class="education-items">
             <div class="education-item">
-                <h3>University of the Cordilleras</h3>
-                <p>Bachelor of Science in Information Technology</p>
-                <p>Web Technology</p>
+                <div class="education-summary">
+                    <h3>University of the Cordilleras</h3>
+                </div>
+                <div class="education-details">
+                    <p>Bachelor of Science in Information Technology</p>
+                    <h4>Web Technology</h4>
+                </div>
             </div>
             <div class="education-item">
-                <h3>Pinsao National High School</h3>
-                <p>Humanities and Social Sciences</p>
-                <p>Graduated: 2023</p>
+                <div class="education-summary">
+                    <h3>Pinsao National High School</h3>
+                </div>
+                <div class="education-details">
+                    <p>Humanities and Social Sciences</p>
+                    <p>Graduated: 2023</p>
+                </div>
             </div>
             <div class="education-item">
-                <h3>Pinsao Elementary School</h3>
-                <p>Graduated: 2017</p>
+                <div class="education-summary">
+                    <h3>Pinsao Elementary School</h3>
+                </div>
+                <div class="education-details">
+                    <p>Graduated: 2017</p>
+                </div>
             </div>
         </div>
     </section>
@@ -76,7 +88,7 @@
     </section>
     <script>
         const nav = document.querySelector('nav');
-         heroHeight = document.querySelector('.hero').offsetHeight;
+        heroHeight = document.querySelector('.hero').offsetHeight;
 
         const handleScroll = () => {
             if (window.scrollY >= heroHeight) {
