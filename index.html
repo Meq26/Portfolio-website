@@ -37,7 +37,7 @@
         </div>
     </header>
     
-    <section class="about-me" id="about">
+    <section class="about-me fade-in" id="about">
         <h2>About Me</h2>
         <p> I am Flaire Ivan B. Telles, a passionate student at the University of the Cordilleras, </p>
         <p> currently pursuing a degree in Information Technology majoring in Web Technology. </p>
@@ -114,6 +114,19 @@
                 nav.classList.add('fixed');
             });
         });
+        
+        const fadeIns = document.querySelectorAll('.fade-in');
+
+        const checkScroll = () => {
+            fadeIns.forEach(fadeIn => {
+                const rect = fadeIn.getBoundingClientRect();
+                if (rect.top < window.innerHeight && rect.bottom > 0) {
+                    fadeIn.classList.add('visible');
+                }
+            });
+        };
+
+window.addEventListener('scroll', checkScroll);
     </script>
 </body>
 </html>

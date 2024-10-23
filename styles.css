@@ -9,7 +9,6 @@ html {
     scroll-behavior: smooth;
 }
 
-
 body {
     background-color: #ffffff;
 }
@@ -17,6 +16,17 @@ body {
 nav {
     position: relative;
     transition: top 0.3s;
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .fixed {
@@ -81,6 +91,7 @@ nav ul li a::after {
 nav ul li a:hover {
     color: red;
     transform: scale(1.1);
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.7);
 }
 
 nav ul li a:hover::after {
@@ -103,6 +114,7 @@ nav ul li a:hover::after {
 
 .social a:hover {
     color: gray;
+    transform: scale(1.1);
 }
 
 .detail {
@@ -188,6 +200,8 @@ nav ul li a:hover::after {
 .education-item:hover {
     max-height: 500px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
 }
 
 .education-summary {
@@ -207,7 +221,7 @@ nav ul li a:hover::after {
 .vscodes .shape{
     width: 100%;
     height: 700px;
-    bottom: -30%;
+    bottom: -25%;
 }
 
 .vscodes {
@@ -229,7 +243,7 @@ nav ul li a:hover::after {
 }
 
 .vscodes:hover .shape {
-    bottom: -20%;
+    bottom: -15%;
 }
 
 .vscodes:hover .kazuha {
@@ -245,6 +259,10 @@ nav ul li a:hover::after {
     padding: 0 20px;
     min-height: 50vh;
     background: #ffffff;
+}
+
+.contact p{
+    margin: 7px 0;
 }
 
 .contact h2 {
