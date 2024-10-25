@@ -15,13 +15,13 @@ body {
 
 nav {
     position: relative;
-    transition: top 0.3s;
+    transition: top .03s;
 }
 
 .fade-in {
     opacity: 0;
     transform: translateY(20px);
-    transition: opacity 0.6s ease, transform 0.6s ease;
+    transition: opacity 1.5s ease, transform 2.5s ease;
 }
 
 .fade-in.visible {
@@ -201,7 +201,7 @@ nav ul li a:hover::after {
     max-height: 500px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transform: scale(1.05);
-    transition: transform 0.3s ease;
+    transition: transform 0.5s ease;
 }
 
 .education-summary {
@@ -221,7 +221,7 @@ nav ul li a:hover::after {
 .vscodes .shape{
     width: 100%;
     height: 700px;
-    bottom: -25%;
+    bottom: -18%;
 }
 
 .vscodes {
@@ -247,7 +247,7 @@ nav ul li a:hover::after {
 }
 
 .vscodes:hover .kazuha {
-    left: 45%;
+    left: 47%;
 }
 
 .contact {
