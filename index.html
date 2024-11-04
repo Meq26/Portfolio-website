@@ -1,132 +1,128 @@
-<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio Website</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdn.lineicons.com/4.0/lineicons.css">
+    <title>Portfolio</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <header class="hero" id="home">
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="detail">
-            <h1>I'm Flaire Telles</h1>
+
+    <nav class="navbar">
+        <ul>
+            <li class="active"><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="bars-animation">
+        <div class="bar" style="--i:6;"></div>
+        <div class="bar" style="--i:5;"></div>
+        <div class="bar" style="--i:4;"></div>
+        <div class="bar" style="--i:3;"></div>
+        <div class="bar" style="--i:2;"></div>
+        <div class="bar" style="--i:1;"></div>
+    </div>
+
+    <header class="home" id="home">
+        <div class="home-info">
+            <h1>Flaire Telles</h1>
+            <h2>I'm a 
+                <span style="--i:2;" data-text="Web Developer">Web Developer</span>
+                <span style="--i:1;" data-text="IT Student">IT Student</span>
+            </h2>
+            <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima, asperiores dolore! Eligendi, quaerat. Non inventore dolor, eius aperiam id maiores officiis ex placeat minima consectetur culpa enim dicta qui ratione.</p>
+            <div class="btn-sci">
+                <div class="sci">
+                    <a href="https://github.com/Meq26"><i class='bx bxl-github'></i></a>
+                    <a href="https://www.facebook.com/flaire.telles"><i class='bx bxl-facebook' ></i></a>
+                    <a href="https://www.youtube.com/@Ivantelles"><i class='bx bxl-youtube' ></i></a>
+                    <a href="https://www.linkedin.com/in/flaire-ivan-telles-a11576270/"><i class='bx bxl-linkedin' ></i></a>
+                </div>
+            </div>
         </div>
-        <div class="vscodes">
-            <img src="vscodes/shape.png" alt="Decorative shape" class="shape">
-            <img src="vscodes/kazuha.png" alt="Kazuha character" class="kazuha">
-        </div>
-        <div class="social">
-            <a href="https://www.facebook.com/flaire.telles" target="_blank" aria-label="Facebook">
-                <i class="lni lni-facebook"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/flaire-ivan-telles-a11576270/" target="_blank" aria-label="Linkedin">
-                <i class="lni lni-linkedin"></i>
-            </a>
-            <a href="https://github.com/Meq26" aria-label="Github">
-                <i class="lni lni-github"></i>
-            </a>
+
+        <div class="home-img">
+            <div class="img-box">
+                <div class="img-item">
+                    <img src="Navi.png" alt="">
+                </div>
+            </div>
         </div>
     </header>
-    
-    <section class="about-me fade-in" id="about">
-        <h2>About Me</h2>
-        <p> I am Flaire Ivan B. Telles, a passionate student at the University of the Cordilleras, </p>
-        <p> currently pursuing a degree in Information Technology majoring in Web Technology. </p>
-        <p> I have a passion for web development and love exploring innovative ways to apply </p>
-        <p> my skills in real-world projects.</p>
 
-    </section>
-        
-    <section class="portfolio fade-in" id="portfolio">
-        <h2>Education Attainment</h2>
-        <div class="education-items">
-            <div class="education-item">
-                <div class="education-summary">
-                    <h3>University of the Cordilleras</h3>
-                </div>
-                <div class="education-details">
-                    <p>Bachelor of Science in Information Technology</p>
-                    <h4>Web Technology</h4>
-                </div>
-            </div>
-            <div class="education-item">
-                <div class="education-summary">
-                    <h3>Pinsao National High School</h3>
-                </div>
-                <div class="education-details">
-                    <p>Humanities and Social Sciences</p>
-                    <p>Graduated: 2023</p>
-                </div>
-            </div>
-            <div class="education-item">
-                <div class="education-summary">
-                    <h3>Pinsao Elementary School</h3>
-                </div>
-                <div class="education-details">
-                    <p>Graduated: 2017</p>
-                </div>
-            </div>
+    <section class="about" id="about">
+        <div class="about-info">
+            <h2>About Me</h2>
+            <p> I am Flaire Ivan B. Telles, a passionate student at the University of the Cordilleras, </p>
+            <p> currently pursuing a degree in Information Technology majoring in Web Technology. </p>
+            <p> I have a passion for web development and love exploring innovative ways to apply </p>
+            <p> my skills in real-world projects.</p>
         </div>
     </section>
 
-    <section class="contact fade-in" id="contact">
+    <section class="portfolio" id="portfolio">
+        <div class="portfolio">
+            <h2>Educational Attainment</h2>
+            <div class="education-items">
+                <div class="education-item">
+                    <div class="education-summary">
+                        <h3>University of the Cordilleras</h3>
+                    </div>
+                    <div class="education-details">
+                        <p>Bachelor of Science in Information Technology</p>
+                        <p>Web Technology</p>
+                    </div>
+                </div>
+                <div class="education-item">
+                    <div class="education-summary">
+                        <h3>Pinsao National High School</h3>
+                    </div>
+                    <div class="education-details">
+                        <p>Humanities and Social Sciences</p>
+                        <p>Graduated: 2023</p>
+                    </div>
+                </div>
+                <div class="education-item">
+                    <div class="education-summary">
+                        <h3>Pinsao Elementary School</h3>
+                    </div>
+                    <div class="education-details">
+                        <p>Graduated: 2017</p>
+                    </div>
+                </div>
+            </div>
+    </section>
+    
+    <footer class="contact" id="contact">
         <h2>Contact</h2>
         <div class="contact-info">
             <p><strong>Email:</strong> flairetelles123@gmail.com</p>
             <p><strong>Phone:</strong> +63 99 2693 4762</p>
             <p><strong>Location:</strong> Baguio City, Philippines</p>
         </div>
-    </section>
+    </footer>
+
     <script>
-        const nav = document.querySelector('nav');
-        heroHeight = document.querySelector('.hero').offsetHeight;
-
-        const handleScroll = () => {
-            if (window.scrollY >= heroHeight) {
-                nav.classList.add('fixed');
-            } else {
-                nav.classList.remove('fixed');
-            }
-        };
-
-        window.addEventListener('scroll', handleScroll);
-
         document.querySelectorAll('nav ul li a').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
-                e.preventDefault();
+            e.preventDefault();
 
-                const targetId = this.getAttribute('href');
-                const targetElement = document.querySelector(targetId);
-                targetElement.scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'start'
+            const targetId = this.getAttribute('href').substring(1);
+            const targetElement = document.getElementById(targetId);
+
+                window.scrollTo({
+                top: targetElement.offsetTop,
+                behavior: 'smooth'
                 });
-
-                nav.classList.add('fixed');
             });
         });
-        
-        const fadeIns = document.querySelectorAll('.fade-in');
-
-        const checkScroll = () => {
-            fadeIns.forEach(fadeIn => {
-                const rect = fadeIn.getBoundingClientRect();
-                if (rect.top < window.innerHeight && rect.bottom > 0) {
-                    fadeIn.classList.add('visible');
-                }
-            });
-        };
-
-window.addEventListener('scroll', checkScroll);
     </script>
 </body>
+
 </html>
