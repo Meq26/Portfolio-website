@@ -282,7 +282,7 @@ a {
 
 .education-item {
     background: #1f242d;
-    border: 1px solid #fff;
+    border: 1px solid #7cf03d;
     color: #fff;
     border-radius: 5px;
     overflow: hidden;
@@ -309,6 +309,69 @@ a {
 
 .education-item:hover .education-details {
     display: block;
+}
+
+.achievements {
+    padding: 60px 9% 0;
+    background: #1f242d;
+    color: #fff;
+    text-align: center;
+}
+
+.achievements h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+.achievement-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.achievement-item {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    background-color: #1f242d;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+}
+
+.achievement-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.achievement-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.achievement-item:hover img {
+    opacity: 0.8;
+}
+
+.achievement-item:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.achievement-item:hover:before {
+    opacity: 1;
 }
 
 .contact {
