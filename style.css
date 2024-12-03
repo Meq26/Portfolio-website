@@ -477,7 +477,8 @@ a {
     }
 
     .home-img .img-box {
-        display: none;
+        width: 20vw;
+        height: 20vw;
     }
 
     .about {
@@ -520,7 +521,8 @@ a {
     }
 
     .home-img .img-box {
-        display: none;
+        width: 15vw;
+        height: 15vw;
     }
 
     .about-info h2 {
