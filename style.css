@@ -479,7 +479,6 @@ a {
     .home-img .img-box {
         width: 40vw;
         height: 40vw;
-        left: 50%;
     }
 
     .about {
@@ -510,6 +509,7 @@ a {
     .navbar {
         padding: 15px 5%;
         width: 100%;
+        left: 0;
     }
 
     .home-info h1 {
@@ -523,7 +523,6 @@ a {
     .home-img .img-box {
         width: 30vw;
         height: 30vw;
-        right: 50%;
     }
 
     .about-info h2 {
