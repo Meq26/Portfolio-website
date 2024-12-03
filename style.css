@@ -431,12 +431,28 @@ a {
     .education-items {
         gap: 15px;
     }
+
+    .navbar ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .navbar ul li {
+        margin: 5px;
+    }
+
+    .navbar ul li a {
+        font-size: 18px; /* Adjust font size on larger tablets */
+    }
 }
 
 @media (max-width: 768px) {
     .navbar {
         flex-direction: column;
         padding: 20px 5%;
+        width: 100%; /* Ensure navbar fits on smaller screens */
+        left: 0; /* Ensure no overflow */
     }
 
     .home {
@@ -469,11 +485,22 @@ a {
     .education-items {
         gap: 10px;
     }
+
+    /* Adjust navbar for smaller screens */
+    .navbar ul li a {
+        font-size: 16px; /* Make text smaller on smaller tablets */
+    }
+
+    /* Fix navbar overflow issue */
+    .navbar {
+        padding: 15px 5%; /* Reduce padding */
+    }
 }
 
 @media (max-width: 480px) {
     .navbar {
-        padding: 20px 5%;
+        padding: 15px 5%;
+        width: 100%;
     }
 
     .home-info h1 {
@@ -495,5 +522,10 @@ a {
 
     .portfolio h2 {
         font-size: 24px;
+    }
+
+    /* Adjust navbar font size for mobile */
+    .navbar ul li a {
+        font-size: 14px; /* Make text smaller on mobile */
     }
 }
