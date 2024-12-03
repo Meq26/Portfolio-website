@@ -96,12 +96,6 @@ a {
     margin-top: -10px;
 }
 
-.home-info p {
-    font-size: 16px;
-    color: #1f242d;
-    display: none;
-}
-
 .home-info h2 span {
     position: relative;
     display: inline-block;
@@ -157,6 +151,13 @@ a {
     background: #7cf03d;
     color: #1f242d;
     box-shadow: 0 0 10px #7cf03d;
+}
+
+.home-img {
+    position: absolute; /* Ensure image stays in place even if the p is removed */
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%);
 }
 
 .home-img .img-box {
