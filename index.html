@@ -15,6 +15,11 @@
 <body>
 
     <nav class="navbar">
+        <div class="hamburger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
         <ul>
             <li class="active"><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
@@ -139,6 +144,10 @@
     </footer>
 
     <script>
+        function toggleMenu() {
+            document.querySelector('.navbar').classList.toggle('active');
+        }
+        
         document.querySelectorAll('nav ul li a').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
             e.preventDefault();
