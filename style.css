@@ -99,6 +99,7 @@ a {
 .home-info p {
     font-size: 16px;
     color: #1f242d;
+    visibility: hidden;
 }
 
 .home-info h2 span {
