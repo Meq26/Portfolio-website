@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 * {
     margin: 0;
@@ -23,7 +23,11 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
+}
+
+a {
     color: #fff;
+    text-decoration: none;
 }
 
 .navbar {
@@ -107,7 +111,7 @@ nav ul li a {
 }
 
 @keyframes display-text {
-    50%, 100% {
+50%,100% {
         display: none;
     }
 }
@@ -124,10 +128,10 @@ nav ul li a {
 }
 
 @keyframes fill-text {
-    10%, 100% {
+    10%,100% {
         width: 0;
     }
-    70%, 90% {
+    70%,90% {
         width: 100%;
     }
 }
@@ -145,7 +149,7 @@ nav ul li a {
     font-size: 20px;
     color: #7cf03d;
     margin: 0 8px;
-    transition: .5s;
+    transition: .5x;
 }
 
 .home-info .btn-sci .sci a:hover {
@@ -156,8 +160,8 @@ nav ul li a {
 
 .home-img .img-box {
     position: relative;
-    width: 25vw;
-    height: 25vw;
+    width: 32vw;
+    height: 32vw;
     border-radius: 50%;
     padding: 3px;
     display: flex;
@@ -175,7 +179,6 @@ nav ul li a {
     background: conic-gradient(transparent, transparent, transparent, #7cf03d);
     transform: rotate(0deg);
     animation: rotate-border 10s linear infinite;
-    will-change: transform;
 }
 
 .home-img .img-box::after {
@@ -272,7 +275,7 @@ nav ul li a {
     max-width: 700px;
 }
 
-.portfolio h2 {
+.portfolio h2{
     margin-bottom: 25px;
     color: #fff;
 }
@@ -348,138 +351,187 @@ nav ul li a {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition: opacity 0.3s ease-in-out;
 }
 
-footer {
-    padding: 20px;
-    text-align: center;
+.achievement-item:hover img {
+    opacity: 0.8;
+}
+
+.achievement-item:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.achievement-item:hover:before {
+    opacity: 1;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0 20px;
+    min-height: 50vh;
     background: #1f242d;
     color: #fff;
 }
 
-footer h2 {
-    font-size: 24px;
+.contact p{
+    margin: 7px 0;
+}
+
+.contact h2 {
     margin-bottom: 20px;
 }
 
-.contact-info p {
-    margin: 10px 0;
+.contact-info {
+    text-align: center;
+    font-size: 18px;
 }
 
-/* Media Queries for Responsive Design */
+/* Media Queries for Responsiveness */
 
-/* Large devices (desktops, 1200px and up) */
-@media (min-width: 1200px) {
-    .home-info h1 {
-        font-size: 70px;
-    }
-
-    .home-info h2 {
-        font-size: 40px;
-    }
-}
-
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
-    .home-info h1 {
-        font-size: 60px;
-    }
-
-    .home-info h2 {
-        font-size: 35px;
-    }
-
-    .home-img .img-box {
-        width: 30vw;
-        height: 30vw;
-    }
-
-    .about-info p {
-        font-size: 18px;
-    }
-
-    .education-items {
-        max-width: 90%;
-    }
-}
-
-/* Small devices ( 576px and up) */
-@media (max-width: 600px) {
-    .home-info h1 {
-        font-size: 50px;
-    }
-
-    .home-info h2 {
-        font-size: 30px;
-    }
-
-    .home-img .img-box {
-        width: 50vw;
-        height: 50vw;
-    }
-
-    .about-info p {
-        font-size: 16px;
-    }
-
-    .education-items {
-        max-width: 90%;
+/* For Tablets and Small Desktops (1024px and below) */
+@media (max-width: 1024px) {
+    /* Navbar adjustments */
+    .navbar {
+        padding: 25px 5%;
     }
     .navbar ul {
-        flex-direction: column; /* Navbar links stacked on smaller screens */
+        flex-direction: column;
         text-align: center;
     }
-}
-
-/* Extra small devices (portrait phones, less than 576px) */
-@media (max-width: 575px) {
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
-
     .navbar ul li {
         margin: 10px 0;
     }
 
+    /* Home Section */
     .home {
         flex-direction: column;
-        text-align: center;
-        padding: 30px 5%;
+        padding: 60px 5%;
     }
-
     .home-info h1 {
-        font-size: 40px;
+        font-size: 45px;
+    }
+    .home-info h2 {
+        font-size: 28px;
+    }
+    .home-img .img-box {
+        width: 35vw;
+        height: 35vw;
     }
 
+    /* About Section */
+    .about {
+        flex-direction: column;
+        padding: 40px 5%;
+    }
+
+    /* Portfolio Section */
+    .portfolio {
+        padding: 20px 5%;
+    }
+
+    /* Education Section */
+    .education-items {
+        flex-direction: column;
+    }
+
+    /* Achievements Section */
+    .achievements h2 {
+        font-size: 28px;
+    }
+
+    .achievement-items {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* Contact Section */
+    .contact {
+        padding: 40px 5%;
+    }
+}
+
+/* For Mobile Devices (600px and below) */
+@media (max-width: 600px) {
+    /* Navbar adjustments */
+    .navbar {
+        padding: 15px 5%;
+    }
+    .navbar ul {
+        flex-direction: column;
+        text-align: center;
+    }
+    .navbar ul li {
+        margin: 8px 0;
+    }
+
+    /* Home Section */
+    .home {
+        flex-direction: column;
+        padding: 60px 5%;
+    }
+    .home-info h1 {
+        font-size: 30px;
+    }
     .home-info h2 {
+        font-size: 22px;
+    }
+    .home-img .img-box {
+        width: 45vw;
+        height: 45vw;
+    }
+
+    /* About Section */
+    .about {
+        flex-direction: column;
+        padding: 40px 5%;
+    }
+    .about-info h2 {
+        font-size: 24px;
+    }
+    .about-info p {
+        font-size: 14px;
+    }
+
+    /* Portfolio Section */
+    .portfolio h2 {
         font-size: 24px;
     }
 
-    .home-img .img-box {
-        width: 60vw;
-        height: 60vw;
-    }
-
-    .about {
-        flex-direction: column;
-        text-align: center;
-        padding: 30px 5%;
-    }
-
-    .portfolio {
-        padding: 30px 5%;
-    }
-
+    /* Education Section */
     .education-items {
-        max-width: 100%;
+        flex-direction: column;
     }
 
-    .achievements {
-        padding: 30px 5%;
+    .education-item {
+        margin-bottom: 20px;
     }
 
-    footer {
-        padding: 20px 5%;
+    /* Achievements Section */
+    .achievements h2 {
+        font-size: 24px;
+    }
+
+    .achievement-items {
+        grid-template-columns: 1fr;
+    }
+
+    /* Contact Section */
+    .contact {
+        padding: 40px 5%;
+    }
+    .contact-info {
+        font-size: 16px;
     }
 }
