@@ -521,9 +521,8 @@ a {
     }
 
     .home-img .img-box {
-        width: 50vw;
-        height: 50vw;
-        left: 50%;
+        width: 30vw;
+        height: 30vw;
     }
 
     .about-info h2 {
