@@ -156,7 +156,7 @@ a {
 .home-img {
     position: absolute;
     top: 50%;
-    left: 55%;
+    left: 60%;
     transform: translate(-50%, -50%); /* Center the image */
     width: 32vw;  /* Initial width based on viewport width */
     height: 32vw; /* Keep aspect ratio based on viewport width */
@@ -477,8 +477,8 @@ a {
     }
 
     .home-img .img-box {
-        width: 20vw;
-        height: 20vw;
+        width: 25vw;
+        height: 25vw;
     }
 
     .about {
@@ -521,8 +521,8 @@ a {
     }
 
     .home-img .img-box {
-        width: 15vw;
-        height: 15vw;
+        width: 30vw;
+        height: 30vw;
     }
 
     .about-info h2 {
