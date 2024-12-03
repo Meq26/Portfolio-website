@@ -477,9 +477,7 @@ a {
     }
 
     .home-img .img-box {
-        width: 40vw;
-        height: 40vw;
-        left: 25%;
+        display: none;
     }
 
     .about {
@@ -522,9 +520,7 @@ a {
     }
 
     .home-img .img-box {
-        width: 30vw;
-        height: 30vw;
-        left: 10%;
+        display: none;
     }
 
     .about-info h2 {
