@@ -513,6 +513,7 @@ a {
     }
 
     .home-info h1 {
+        top: 10px;
         font-size: 30px;
     }
 
@@ -523,6 +524,7 @@ a {
     .home-img .img-box {
         width: 50vw;
         height: 50vw;
+        left: -10%;
     }
 
     .about-info h2 {
