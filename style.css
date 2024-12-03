@@ -523,6 +523,7 @@ a {
     .home-img .img-box {
         width: 30vw;
         height: 30vw;
+        right: 50%;
     }
 
     .about-info h2 {
