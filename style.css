@@ -154,16 +154,18 @@ a {
 }
 
 .home-img {
-    position: absolute; /* Ensure image stays in place even if the p is removed */
+    position: absolute;
     top: 50%;
-    left: 50%;
-    transform: translateY(-50%);
+    left: 55%;
+    transform: translate(-50%, -50%); /* Center the image */
+    width: 32vw;  /* Initial width based on viewport width */
+    height: 32vw; /* Keep aspect ratio based on viewport width */
 }
 
 .home-img .img-box {
     position: relative;
-    width: 32vw;
-    height: 32vw;
+    width: 100%;  /* Ensure it takes the full width of its container */
+    height: 100%; /* Ensure the height matches the width to maintain the square shape */
     border-radius: 50%;
     padding: 3px;
     display: flex;
@@ -420,6 +422,12 @@ a {
         font-size: 28px;
     }
 
+    .home-img {
+        width: 25vw;  /* Adjust image size for tablets and smaller screens */
+        height: 25vw;
+        left: 50%;
+    }
+
     .about {
         padding: 60px 5% 0;
     }
@@ -469,8 +477,9 @@ a {
     }
 
     .home-img .img-box {
-        width: 50vw;
-        height: 50vw;
+        width: 40vw;
+        height: 40vw;
+        left: 50%;
     }
 
     .about {
@@ -512,8 +521,9 @@ a {
     }
 
     .home-img .img-box {
-        width: 60vw;
-        height: 60vw;
+        width: 50vw;
+        height: 50vw;
+        left: 50%;
     }
 
     .about-info h2 {
