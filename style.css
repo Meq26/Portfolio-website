@@ -156,8 +156,8 @@ nav ul li a {
 
 .home-img .img-box {
     position: relative;
-    width: 32vw;
-    height: 32vw;
+    width: 25vw;
+    height: 25vw;
     border-radius: 50%;
     padding: 3px;
     display: flex;
@@ -369,7 +369,7 @@ footer h2 {
 /* Media Queries for Responsive Design */
 
 /* Large devices (desktops, 1200px and up) */
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
     .home-info h1 {
         font-size: 70px;
     }
@@ -380,7 +380,7 @@ footer h2 {
 }
 
 /* Medium devices (tablets, 768px and up) */
-@media (min-width: 600px){
+@media (min-width: 768px) {
     .home-info h1 {
         font-size: 60px;
     }
@@ -390,8 +390,8 @@ footer h2 {
     }
 
     .home-img .img-box {
-        width: 40vw;
-        height: 40vw;
+        width: 30vw;
+        height: 30vw;
     }
 
     .about-info p {
@@ -403,7 +403,7 @@ footer h2 {
     }
 }
 
-/* Small devices (landscape phones, 576px and up) */
+/* Small devices ( 576px and up) */
 @media (max-width: 600px) {
     .home-info h1 {
         font-size: 50px;
@@ -425,10 +425,14 @@ footer h2 {
     .education-items {
         max-width: 90%;
     }
+    .navbar ul {
+        flex-direction: column; /* Navbar links stacked on smaller screens */
+        text-align: center;
+    }
 }
 
 /* Extra small devices (portrait phones, less than 576px) */
-@media (max-width: 600px) {
+@media (max-width: 575px) {
     nav ul {
         flex-direction: column;
         align-items: center;
